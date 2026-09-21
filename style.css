@@ -1,0 +1,395 @@
+/* ==============================
+   BASIC SETTINGS
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   NAVIGATION BAR
+   ============================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background-color: #14213d;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #4cc9f0;
+}
+
+
+/* ==============================
+   HERO SECTION
+   ============================== */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #14213d,
+        #4361ee
+    );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #e8edff;
+}
+
+
+/* ==============================
+   BUTTON
+   ============================== */
+
+.button {
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    background-color: #4cc9f0;
+    color: #14213d;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+
+/* ==============================
+   FEATURES SECTION
+   ============================== */
+
+.features {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.features h2,
+.about h2,
+.testimonial h2 {
+    font-size: 36px;
+    color: #14213d;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: white;
+
+    padding: 35px 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #4361ee;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   ABOUT SECTION
+   ============================== */
+
+.about {
+    padding: 80px 8%;
+
+    background-color: #eaf4ff;
+
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+
+/* ==============================
+   TESTIMONIAL SECTION
+   ============================== */
+
+.testimonial {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.testimonial-box {
+    max-width: 700px;
+
+    margin: 30px auto 0;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-left: 5px solid #4361ee;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-box p {
+    color: #555;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.testimonial-box h4 {
+    color: #4361ee;
+    margin-top: 15px;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    background-color: #14213d;
+    color: white;
+
+    padding: 40px 8% 20px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info h3 {
+    font-size: 24px;
+}
+
+.footer-info p {
+    color: #cbd5e1;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #4cc9f0;
+}
+
+.copyright {
+    text-align: center;
+
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid #394867;
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+}
+
+
+/* ==============================
+   TABLET RESPONSIVE DESIGN
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE DESIGN
+   ============================== */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .features,
+    .about,
+    .testimonial {
+        padding: 60px 20px;
+    }
+
+    .features h2,
+    .about h2,
+    .testimonial h2 {
+        font-size: 30px;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
